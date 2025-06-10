@@ -1,0 +1,51 @@
+name,army_stars,navy_stars,air_force_stars,production
+Canada,3,1,1,0.5
+Zimbabwe,1,0,1,0.2
+South Africa,3,2,3,0.8
+Egypt,1,0,1,0.2
+Morocco,2,0,0,0.2
+Democratic Republic Of Congo,1,1,1,0.3
+Portugal,1,0,1,0.2
+Spain,2,1,2,0.5
+France,3,1,2,0.6
+United Kingdom,4,4,4,1.2
+Ireland,2,1,1,0.4
+Italy,1,2,1,0.4
+Israel,0,1,1,0.2
+Jordan,1,2,1,0.4
+Belgium,1,0,0,0.1
+Netherlands,2,3,3,0.8
+Germany,2,2,3,0.7
+Switzerland,2,3,2,0.7
+Austria,1,1,0,0.3
+Hungary,2,1,2,0.5
+Romania,3,1,1,0.6
+Poland,0,0,1,0.2
+Denmark,4,3,2,1.0
+Norway,2,3,4,0.9
+Sweden,3,1,2,0.6
+Finland,3,1,2,0.7
+Ukraine,2,4,3,0.9
+Turkey,0,1,1,0.2
+Armenia,2,2,2,0.6
+Azerbaijan,3,0,0,0.4
+Iraq,3,2,1,0.7
+Saudi Arabia,3,1,1,0.7
+United Arab Emirates,3,1,1,0.6
+Iran,3,2,2,0.8
+Pakistan,4,2,3,0.9
+China,4,4,4,1.2
+Srilanka,2,2,3,0.7
+Bangladesh,1,1,1,0.3
+Australia,0,1,0,0.2
+Russia,4,4,4,1.2
+Dominican Republic,3,2,1,0.7
+Colombia,3,2,1,0.8
+Chile,4,2,3,1.5
+Argentina,3,0,0,0.4
+Brazil,3,2,1,0.75
+Mexico,3,2,1,0.75
+United States Of America,4,4,4,1.2
+Singapore,2,2,1,0.5
+New Zealand,2,1,1,0.5
+Malaysia,0,0,0,0.2
