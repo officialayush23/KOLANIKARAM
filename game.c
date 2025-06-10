@@ -7,7 +7,6 @@
 
 #define MAX_COUNTRIES 100
 
-//shoeb
 
 struct Country {
     char name[50];
@@ -37,9 +36,9 @@ int set_cost(int troop){
     return costs[troop];
 }
 
-// shivam
 
-void upgrade(int *army, int *navy, int *air_force) {  //switch case use karke based on choice in "display rules()" upgrade 
+
+void upgrade(int *army, int *navy, int *air_force) {  
     int choice;
     printf("Choose what to upgrade:\n");
     int cost;
@@ -88,8 +87,8 @@ void upgrade(int *army, int *navy, int *air_force) {  //switch case use karke ba
     }
     sleep(2);
 }
-//archit
-void colonize(struct Country *country, int *army, int *navy, int *air_force, int *colonized) { //compare the countries with our own firepower and if equal or greater in all the values then succefull colonization
+
+void colonize(struct Country *country, int *army, int *navy, int *air_force, int *colonized) { 
     if (country->is_colonized) {
         printf("%s is already colonized.\n", country->name);
         return;
@@ -97,7 +96,7 @@ void colonize(struct Country *country, int *army, int *navy, int *air_force, int
 
     if (*army >= country->army_stars && *navy >= country->navy_stars && *air_force >= country->air_force_stars) {
         country->is_colonized = 1;
-        coins += 10; // Reward for colonization
+        coins += 10; 
         printf("You have successfully colonized %s! Coins: %d\n", country->name, coins);
         *army -= country->army_stars;
         *navy -= country->navy_stars;
@@ -110,7 +109,7 @@ void colonize(struct Country *country, int *army, int *navy, int *air_force, int
     sleep(3);
 }
 //farhankhan pathan
-int load_countries_from_csv(struct Country countries[], const char *filename) { //loading countries from the file 
+int load_countries_from_csv(struct Country countries[], const char *filename) {  
     FILE *file = fopen("countries.csv", "r");
     if (!file) {
         perror("Error opening CSV file");
@@ -120,14 +119,14 @@ int load_countries_from_csv(struct Country countries[], const char *filename) { 
     char line[256];
     int count = 0;
 
-    // Skip header line
-    fgets(line, sizeof(line), file);  //printing the countries while saving them in the structure
+   
+    fgets(line, sizeof(line), file);  
 
     while (fgets(line, sizeof(line), file) && count < MAX_COUNTRIES) { 
         char *token = strtok(line, ",");
         if (token == NULL) continue;
         strncpy(countries[count].name, token, sizeof(countries[count].name));
-        countries[count].name[sizeof(countries[count].name) - 1] = '\0'; // ensure null termination
+        countries[count].name[sizeof(countries[count].name) - 1] = '\0'; 
 
         token = strtok(NULL, ",");
         countries[count].army_stars = atoi(token);
@@ -150,7 +149,7 @@ int load_countries_from_csv(struct Country countries[], const char *filename) { 
     fclose(file);
     return count;
 }
-//ayush pathak
+
 int main() { //this is the main functional code 
     int army_stars = 0;
     int navy_stars = 0;
@@ -173,7 +172,7 @@ int main() { //this is the main functional code
         return 1;
     }
 
-    time_t start_time = time(NULL);//time for differentiating between processes
+    time_t start_time = time(NULL);
     while (1) {
         printf("===================================\n");
         printf("COINS: %d\n", coins);
